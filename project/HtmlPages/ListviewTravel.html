@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Listview Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../Content/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        h1.ui-title {
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>各國旅遊資訊</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="搜尋" data-theme="a" data-divider-theme="b" data-count-theme="a">
+                <li data-role="list-divider">亞洲<span class="ui-li-count">共50個景點</span></li>
+                <li><a href="#">中國<span class="ui-li-count">24景點</span></a></li>
+                <li data-icon="user"><a href="#">日本</a></li>
+                <li data-icon="arrow-r"><a href="#">韓國</a></li>
+                <li><a href="#">泰國</a></li>
+                <li><a href="#">印尼</a></li>
+                <li><a href="#">馬來西亞</a></li>
+                <li data-role="list-divider">歐洲<span class="ui-li-count">共34個景點</span></li>
+                <li><a href="#">法國</a></li>
+                <li><a href="#">英國</a></li>
+                <li><a href="#">德國</a></li>
+                <li><a href="#">瑞士</a></li>
+                <li data-role="list-divider">美洲<span class="ui-li-count">共22個景點</span></li>
+                <li><a href="#">美國</a></li>
+                <li><a href="#">關島</a></li>
+                <li><a href="#">加拿大</a></li>
+                <li><a href="#">夏威夷</a></li>
+                <li data-role="list-divider">中東<span class="ui-li-count">共8個景點</span></li>
+                <li><a href="#">土耳其</a></li>
+                <li><a href="#">杜拜</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

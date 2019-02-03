@@ -1,0 +1,29 @@
+﻿@model IEnumerable<project.Models.Car>
+
+@{
+    ViewBag.Title = "Find by Year";
+    var Brand = "";
+}
+
+<div data-role="header" data-add-back-btn="true" data-position="fixed">
+    <h1>年份 : @Model.FirstOrDefault().Year 年</h1>
+</div>
+
+<div data-role="content">
+    <ul data-role="listview" data-inset="true" data-theme="a" data-divider-theme="b">
+        @foreach (var car in Model)
+        {
+            //建立List divider
+            if (Brand != car.Brand)
+            {
+                Brand = car.Brand;
+
+                <li data-role="list-divider"><h1>@car.Brand</h1></li>
+            }
+
+            //呼叫Partial View部分檢視,以顯示每筆車的資料
+            @Html.Partial("CarDetailPartial", car)
+        }
+    </ul>
+</div>
+

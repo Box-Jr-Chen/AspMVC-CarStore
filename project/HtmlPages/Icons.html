@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Structure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link href="../Content/jquery.mobile-1.4.5.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/jquery.mobile-1.4.5.js"></script>
+    <style>
+        h3{
+            background-color:lightpink;
+            padding:5px;
+            border-bottom:dashed 3px black;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Icons圖示的套用</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <!--<h3>Icon套用到超連結Button</h3>-->
+            <button data-icon="heart">Button按鈕</button>
+            <input type="button" data-icon="check" value="Input button" />
+            <a href="#" class="ui-btn ui-btn-icon-left ui-icon-alert ui-corner-all">超連結按鈕</a>
+
+            <!--<h3>Icon套用到Collapsibles</h3>-->
+            <div data-role="collapsible" data-theme="b">
+                <h4>Collapsibles</h4>
+                <p>Collapsible Widget可以收合資訊</p>
+            </div>
+
+            <!--<h3>Icon套用到ListView</h3>-->
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider" data-theme="b">ListView</li>
+                <li data-icon="clock"><a href="#">時間</a></li>
+                <li data-icon="camera"><a href="#">相機</a></li>
+                <li data-icon="calendar"><a href="#">行事曆</a></li>
+                <li data-icon="phone"><a href="#">電話</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

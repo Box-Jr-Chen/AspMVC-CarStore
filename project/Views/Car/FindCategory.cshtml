@@ -1,0 +1,28 @@
+﻿@model IEnumerable<project.Models.Car>
+
+@{
+    ViewBag.Title = "FindCategory";
+    var Category = "";
+}
+
+<div data-role="header" data-add-back-btn="true" data-position="fixed">
+    <h1>汽車類型 : @Model.FirstOrDefault().Category</h1>
+</div>
+
+<div data-role="content">
+    <ul data-role="listview" data-inset="true" data-theme="a" data-divider-theme="b">
+        @foreach (var car in Model)
+        {
+            //建立List divider
+            if (Category != car.Category)
+            {
+                Category = car.Category;
+
+                <li data-role="list-divider"><h1>@car.Category</h1></li>
+            }
+
+            //呼叫Partial View部分檢視,以顯示每筆車的資料
+            @Html.Partial("CarDetailPartial", car)
+        }
+    </ul>
+</div>

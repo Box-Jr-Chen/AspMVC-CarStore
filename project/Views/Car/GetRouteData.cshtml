@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "GetRouteData";
+}
+
+<h2>GetRouteData</h2>
+
+@{
+    //透過Reflection讀取Url Pattern設定值
+    var route = ViewContext.RouteData.Route;
+    var UrlPattern = route.GetType().GetProperty("Url").GetValue(route);
+}
+
+<!--讀取Request請求的URL-->
+<h3>URL請求 : @Request.RawUrl</h3>
+@*<h3>URL請求 : @ViewContext.RequestContext.HttpContext.Request.RawUrl</h3>*@
+
+
+<h3>對映路由URL Pattern : @UrlPattern</h3>
+
+<!--逐一讀取路由參數-->
+<ul>
+    @foreach (var item in ViewContext.RouteData.Values)
+    {
+        <li>@item.Key : @item.Value</li>
+    }
+</ul>
+
+<!--或是建立成Partial View-->
+@*@Html.Partial("RouteInfoPartial")*@
+

@@ -1,0 +1,9 @@
+﻿@model project.Models.Car
+
+<li data-icon="false">
+    <a href="#">
+        <img src="~/Assets/Images/cars/@Model.ImageUrl" />
+        <h2>@Model.Brand @Model.Name - @Model.Year 年款式(共售出 @Model.SoldNumber 輛)</h2>
+        <p>價格:$@Model.Price</p>
+    </a>
+</li>

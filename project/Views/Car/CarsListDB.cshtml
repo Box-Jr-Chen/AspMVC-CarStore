@@ -1,0 +1,35 @@
+﻿@model IEnumerable<project.Models.Car>
+
+@{
+    ViewBag.Title = "CarsListDB";
+    var Category = "";
+}
+
+<div data-role="header" data-add-back-btn="true" data-position="fixed">
+    <a href="#" data-role="button" data-rel="back" data-theme="b">返回</a>
+    <h1>各類型汽車及價格參考</h1>
+</div>
+
+<div data-role="content">
+    <ul data-role="listview" data-inset="true" data-theme="a" data-divider-theme="b">
+        @foreach (var car in Model)
+        {
+            //替每類車建立List divider
+            if (Category != car.Category)
+            {
+                Category = car.Category;
+
+                <li data-role="list-divider"><h1>@car.Category</h1></li>
+            }
+
+            //顯示每筆車的資料
+            <li data-icon="false">
+                <a href="#">
+                    <img src="~/Assets/Images/cars/@car.ImageUrl" />
+                    <h2>@car.Name</h2>
+                    <p>價格:$@car.Price</p>
+                </a>
+            </li>
+        }
+    </ul>
+</div>

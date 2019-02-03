@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+<div data-role="header">
+    <h1>汽車情報網</h1>
+</div>
+
+<div role="main" class="ui-content">
+    <div id="carlogo">
+        <img src="~/Assets/Images/cars/ferrari.png" />
+    </div>
+
+    <ul data-role="listview" data-inset="true">
+        <li><a href="CarsList">汽車款式</a></li>
+        <li><a href="Repair">維修保養</a></li>
+        <li><a href="Contact">連絡客服</a></li>
+        <li><a href="About">關於我們</a></li>
+        <li><a href="CarsListDB">汽車款式(資料庫)</a></li>
+        @*<li><a href="RepairReflow">維修保養(Table Reflow)</a></li>*@
+    </ul>
+</div>
+
+
+@section topCSS{
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        div#carlogo {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+}

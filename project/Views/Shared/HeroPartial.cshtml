@@ -1,0 +1,19 @@
+﻿@model MvcJqueryMobile.Models.Hero
+
+<div data-role="page" id="@Model.PageId">
+    <div data-role="header" data-theme="a">
+        <h1>LOL英雄人物  -- @Model.Header</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <img src="@Model.ImageUrl" alt="@Model.ImageAlt" />
+        <p>
+            @Model.Introduction
+        </p>
+        <div class="video-responsive">
+            <iframe src="@Model.VideoUrl" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <h3>@Model.Footer</h3>
+    </div>
+</div>

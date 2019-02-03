@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Repair - Reflow Table";
+}
+
+<div data-role="header" data-add-back-btn="true">
+    <a href="#" data-role="button" data-rel="back" data-theme="b">返回</a>
+    <h1>維修保養</h1>
+</div>
+
+<div role="main" class="ui-content">
+    <!--Table: Reflow-->
+    <table data-role="table" id="table-reflow" data-mode="reflow" class="ui-responsive table-stroke table-stripe">
+        <caption>汽車維修保養價目表</caption>
+        <thead>
+            <tr>
+                <th data-priority="1">編號</th>
+                <th data-priority="critical">維修項目</th>
+                <th data-priority="2">小型車</th>
+                <th>轎車</th>
+                <th data-priority="3">休旅車</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>引擎維修</td>
+                <td>3000</td>
+                <td>3200</td>
+                <td>3500</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>更換機油</td>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>煞車油更換</td>
+                <td>699</td>
+                <td>750</td>
+                <td>750</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+@section topCSS{
+    <style>
+        .ui-table caption {
+            color: black;
+            text-align: center;
+            opacity: 1;
+            text-shadow: none;
+            font-size: 1.5em;
+        }
+    </style>
+}
+

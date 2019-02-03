@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../Content/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        img{
+            width:100%;
+            height:auto;
+            border-radius:10px;
+        }
+
+        .footer-button-left, .footer-button-right {
+            position: absolute;
+            margin: 0;
+            top: auto;
+            bottom: 0.24em;
+        }
+
+        .footer-button-left {
+            left: 0.4em;
+        }
+
+        .footer-button-right {
+            right: 0.4em;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <a href="#" class="ui-btn ui-btn-icon-left ui-icon-home ui-btn-b ui-corner-all ui-btn-inline ui-mini">首頁</a>
+            <h1>各國旅遊資訊</h1>
+            <a href="Dialog.html" data-transition="pop" class="ui-btn ui-btn-icon-right ui-icon-info ui-btn-b ui-corner-all">訊息</a>
+        </div>
+        <div role="main" class="ui-content">
+            <a href="Dialog.html" class="ui-btn ui-corner-all ui-btn-inline" data-transition="pop">開啟Dialog對話方塊</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h3>&copy; 國家觀光局 2018</h3>
+            <a href="#" class="ui-btn ui-btn-icon-left ui-icon-carat-l footer-button-left ui-btn-b ui-corner-all ui-btn-inline ui-mini">前頁</a>
+            <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r footer-button-right ui-btn-b ui-corner-all ui-btn-inline ui-mini ">下頁</a>
+        </div>
+    </div>
+
+    <!--Dialog Page-->
+    <!--<div data-role="page" id="dialogMsg">
+        <div data-role="header">
+            <h1>訊息說明</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <p>所有旅遊行程及費用由各旅行社提供為主，請洽相關旅行社</p>
+            <a href="#main" data-role="button" data-rel="back" data-theme="b" class="ui-btn ui-btn-b ui-btn-corner-all">返回</a>
+        </div>
+        <div data-role="footer">
+        </div>
+    </div>-->
+</body>
+</html>

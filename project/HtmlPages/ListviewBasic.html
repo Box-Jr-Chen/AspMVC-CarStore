@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Listview Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../Content/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        h1.ui-title {
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>用Listview呈現各國旅遊資訊</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <!--unordered Listview-->
+            <ul data-role="listview">
+                <li>法國</li>
+                <li>英國</li>
+                <li>美國</li>
+                <!--<li>中國</li>
+                <li>日本</li>-->
+            </ul>
+            <br /><br />
+            <!--ordered Listview-->
+            <ol data-role="listview">
+                <li>法國</li>
+                <li>英國</li>
+                <li>美國</li>
+                <!--<li>中國</li>
+                <li>日本</li>-->
+            </ol>
+            <br />
+            <!--Linked Listview-->
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#">法國</a></li>
+                <li><a href="#">英國</a></li>
+                <li><a href="#">美國</a></li>
+                <!--<li><a href="#">中國</a></li>
+                <li><a href="#">日本</a></li>
+                <li><a href="#">中東</a></li>-->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

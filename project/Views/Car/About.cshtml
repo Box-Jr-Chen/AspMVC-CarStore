@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "About";
+}
+
+<div data-role="header" data-add-back-btn="true">
+    <a href="#" data-role="button" data-rel="back" data-theme="b">返回</a>
+    <h1>關於我們</h1>
+</div>
+
+<div role="main" class="ui-content">
+    <h1>經營理念</h1>
+    <div>
+        <img src="~/Assets/images/cars/VW_Beetle.jpeg"/>
+    </div>
+    <p>
+        本公司具備多年汽車銷售及維修經驗，本著顧客至上的理念，
+        為客戶提供最好的服務，讓您獲得最佳的服務體驗。
+    </p>
+</div>
+
+@section topCSS{
+    <style>
+        div.ui-content h1 {
+        text-align:center;
+        color:white;
+        background-color:dodgerblue;
+        border-radius:10px;
+        }
+
+        img {
+            max-width:100%;
+            width:100%;
+            height:auto;
+            border-radius:10px;
+            border:1px solid black;
+            text-shadow:none;
+        }
+    </style>
+}

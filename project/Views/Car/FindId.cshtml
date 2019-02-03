@@ -1,0 +1,18 @@
+﻿@model project.Models.Car
+
+@{
+    ViewBag.Title = "Find car by Id";
+}
+
+<div data-role="header">
+    <h1>汽車Id 編號 : @Model.Id</h1>
+</div>
+
+<div data-role="content">
+    <ul data-role="listview" data-inset="true" data-theme="a" data-divider-theme="b">
+        <li data-role="list-divider"><h1>@Model.Category</h1></li>
+
+        <!--呼叫Partial View部分檢視,以顯示每筆車的資料-->
+        @Html.Partial("CarDetailPartial", Model)
+    </ul>
+</div>

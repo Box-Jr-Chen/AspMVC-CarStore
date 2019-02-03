@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Multi Pages</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--使用Web Server本機的函式庫-->
+    <link href="../content/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        p {
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: dodgerblue;
+            padding: 15px;
+            text-shadow:none;
+            color:white;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius:10px;
+        }
+
+        h1.ui-title {
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+        }
+
+        .video-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .video-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" id="mainpage">
+        <div data-role="header" >
+            <h1>LOL英雄人物列表</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="http://eune.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/2017.10.10.articlebanner.champskinsale_en.jpg" alt="LOL" />
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#page_Zilean">時光守護者--極靈</a></li>
+                <li><a href="#page_Teemo">迅捷斥候--提摩</a></li>
+                <li><a href="#page_Sona">琴仙--索娜</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h3>LOL英雄人物</h3>
+        </div>
+    </div>
+
+    <div data-role="page" id="page_Zilean">
+        <div data-role="header" data-theme="a">
+            <h1>LOL英雄人物 -- 時光守護者 極靈</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_0.jpg" alt="Zilean" />
+            <p>
+                極靈是時光守護者，可以扭曲任意英雄的時光，可以對友方英雄或敵方英雄施放。
+            </p>
+            <div class="video-responsive">
+                <iframe src="https://www.youtube.com/embed/_Jc7bZZlGIo" frameborder="0"  gesture="media" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+            <h3>Zilean 極靈</h3>
+        </div>
+    </div>
+    <div data-role="page" id="page_Teemo">
+        <div data-role="header" data-theme="a">
+            <h1>LOL英雄人物 -- 迅捷斥候 提摩</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg" alt="Teemo" />
+            <p>
+                提摩的代表武器－吹箭，使用了採集於庫莽古叢林中的劇烈猛毒。
+            </p>
+            <div class="video-responsive">
+                <iframe src="https://www.youtube.com/embed/Qj48qHM1MXE" frameborder="0"  gesture="media" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+            <h3>Teemo 提摩</h3>
+        </div>
+    </div>
+    <div data-role="page" id="page_Sona">
+        <div data-role="header" data-theme="a">
+            <h1>LOL英雄人物 -- 琴仙 索娜</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_4.jpg" alt="Sona" />
+            <p>
+                索娜演奏的旋律能讓靈魂起舞，而她的沉寂卻如撕心裂肺。
+            </p>
+            <div class="video-responsive">
+                <iframe src="https://www.youtube.com/embed/MAiOAert8us" frameborder="0"  gesture="media" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+            <h3>Sona 索娜</h3>
+        </div>
+    </div>
+</body>
+</html>
